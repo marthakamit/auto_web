@@ -46,7 +46,7 @@ class _PaginatedCommentsScreenState extends State<PaginatedCommentsScreen> {
         List<Map<String, dynamic>> newComments = List<Map<String, dynamic>>.from(response.data);
 
         // Check if id == 500, then reset everything and increase totalRound
-        if (newComments.any((comment) => comment['id'] == 500)) { //500
+        if (newComments.any((comment) => comment['id'] == 450)) { //500
           setState(() => _totalRound++); // Increase total round count
           _resetPagination();
           return;
